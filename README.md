@@ -6,3 +6,5 @@ Provided a method for users who wanted to create their own book database or woul
 
 Environment: Python 3.7
 Required python modules; pymongo, os, json, Flask
+
+See *Manual Test Plan.pdf* for more details.
