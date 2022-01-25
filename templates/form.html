@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/new_book" method="post">
+  <label for="book_title">Book title:</label><br>
+  <input type="text" id= "book_title" name="book_title"><br>
+  <label for="book_author">Author:</label><br>
+  <input type="text" id= "book_author" name="book_author"><br><br>
+  <label for="book_id">Book id:</label><br>
+  <input type="text" id="book_id" name="book_id"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<form action="/search_book_id" method="post">
+  <label for="search_book_id">Search Book by id:</label><br>
+  <input type="text" id="search_book_id" name="search_book_id"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<form action="/delete_this_book" method="post">
+  <label for="delete_book_id">Book id:</label><br>
+  <input type="text" id="delete_book_id" name="delete_book_id"><br><br>
+  <input type="submit" value="Delete">
+</form>
+
+<form action="/update_this_book" method="post">
+  <label for="update_book_id">Book id:</label><br>
+  <input type="text" id="update_book_id" name="update_book_id"><br><br>
+  <label for="field_name">Field:</label><br>
+  <input type="text" id= "field_name" name="field_name"><br>
+  <label for="value_name">New value:</label><br>
+  <input type="text" id= "value_name" name="value_name"><br>
+  <input type="submit" value="Update">
+</form>
+
+
+<form action="/new_author" method="post">
+  <label for="author_name">author title:</label><br>
+  <input type="text" id= "author_name" name="author_name"><br>
+  <label for="author_id">author id:</label><br>
+  <input type="text" id="author_id" name="author_id"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<form action="/search_author_id" method="post">
+  <label for="search_author_id">Search author by id:</label><br>
+  <input type="text" id="search_author_id" name="search_author_id"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<form action="/delete_this_author" method="post">
+  <label for="delete_author_id">author id:</label><br>
+  <input type="text" id="delete_author_id" name="delete_author_id"><br><br>
+  <input type="submit" value="Delete">
+</form>
+
+<form action="/update_this_author" method="post">
+  <label for="update_author_id">author id:</label><br>
+  <input type="text" id="update_author_id" name="update_author_id"><br><br>
+  <label for="author_field_name">Field:</label><br>
+  <input type="text" id= "author_field_name" name="author_field_name"><br>
+  <label for="author_value_name">New value:</label><br>
+  <input type="text" id= "author_value_name" name="author_value_name"><br>
+  <input type="submit" value="Update">
+</form>
+
+
+</body>
+</html>

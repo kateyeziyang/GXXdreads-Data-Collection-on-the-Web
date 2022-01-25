@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+#dict_table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  word-wrap:break-word;
+  word-break:break-all;
+  /*width: 70%;*/
+}
+
+#dict_table td, #dict_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#dict_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#dict_table tr:hover {background-color: #ddd;}
+
+#dict_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+    <title>Template</title>
+</head>
+<body>
+
+<table id="dict_table">
+    <tr>
+    {% for key, value in my_dict[0].items() %}
+      <th>{{key}}</th>
+    {% endfor %}
+    </tr>
+    {% for dict_item in my_dict %}
+    <tr>
+        {% for key, value in dict_item.items() %}
+        <td>{{value}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
